@@ -45,11 +45,9 @@ $(document).ready(function() {
 	});
 	$(document).on("click",".gif",function(){
 		var temp = $(this).data('temp');
-		this.attr("data-temp", this.src);
+		this.temp = this.src;
 		this.src = temp;
-		console.log(this.temp);
-		console.log(this.src);
-		console.log(temp)
+
 
 	});
 
