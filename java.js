@@ -12,7 +12,7 @@ $(document).ready(function() {
 		}
 	}
 	function pullData(search){
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + APIKEY;
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=" + APIKEY;
 		$.ajax({
           url: queryURL,
           method: "GET"
@@ -34,7 +34,7 @@ $(document).ready(function() {
 	}
 	function randomGiphy(){
 		var random = Math.floor(Math.random() * (25));
-		return random;		
+		return random;
 	};
 
 
@@ -65,4 +65,3 @@ $(document).ready(function() {
 
 
 });
-
